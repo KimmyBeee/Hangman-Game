@@ -1,0 +1,17 @@
+#main-container {
+	background: url("..assets/images/ep_naturalblack.png");
+}
+
+#title-box {
+	background-image: url();
+	background-repeat: no-repeat;
+	text-align: center;
+	background-color: blue;
+	padding: 50px;
+}
+
+#image-box {
+	background-color: #1a2893;
+	float: left;
+
+}
