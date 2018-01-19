@@ -1,17 +1,30 @@
+body {
+	background-image: url("../images/ep_naturalblack.png");
+}
+
 #main-container {
-	background: url("..assets/images/ep_naturalblack.png");
+	max-width: 760px;
 }
 
 #title-box {
 	background-image: url();
 	background-repeat: no-repeat;
-	text-align: center;
 	background-color: blue;
 	padding: 50px;
+	/*margin-left: 50px;
+	margin-right: 50px;*/
 }
 
 #image-box {
 	background-color: #1a2893;
 	float: left;
 
+}
+
+#col-3 {
+	background-color: #1a2893;
+}
+
+#col-4 {
+	background-color: #1a2893;
 }

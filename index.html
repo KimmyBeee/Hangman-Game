@@ -12,47 +12,47 @@
 
 	<body>
 		<!-- Whole Page In It's Entirety -->
-		<div id="main-container">
-			<div id="title-box" class="container">
-				<div class="row">
-					<div class="col-md-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+				<div id="title-box" class="container">
+					
 		<!-- Main Title -->
 						<header>
-							<h1>Cosmic Aquarium</h1>
-							<h2>Hangman</h2>
-							<img src= >
+							<h1 id="main-header">Cosmic Aquarium</h1>
+							<h2 id="name-header">Hangman</h2>
 						</header>
 					</div>
 				</div>
 			</div>	
 			<div class="row">
 				<div id="image-box" class="container">
-					<div class="col-md-3">
-		<!-- Changing Aquatic Pics Box-->
-						<img src=>
+					<div class="col-3">
+						<img src="assets/images/HighResCosDolphin.jpg" alt="Rainbow Cosmic Dolphin Joyfully Leaping!!">
 					</div>
+				</div>
 		<!-- Current Word Action Box -->
-					<div id="current-word" class="container">
-						<div class="col-md-6"
-					 		<h2>Current Word</h2>
+				<div id="gameplay" class="container">
+					<div class="col-6">
+					 	<h2>Current Word:</h2>
+					 	<span style="red" id="word"></span>
 		<!-- Insert guess/word lines here -->
-						</div>
-					</div>
-			<div id="guesses" class="container">
-				<div class="col-md-4">
-		<!-- Current Status Action Box -->
-					<h3>Remaining Guesses</h3>
+
 		<!-- Insert guess countdown here -->
-					<h4>Letters Used</h4>
+						<h3>Remaining Guesses</h3>
+							<p id="guesses-left"></p>
+
 		<!-- Insert guessed letters here -->
+						<h4>Letters Used</h4>
+							<p id="used"></p>
+					</div>
 				</div>
 			</div>
-			<row>
 		</div>
 
 
 		<!-- Link to Javascript -->
-		<script src="/javascript/game.js"></script>
+		<script src="assets/javascript/game.js"></script>
 	</body>
 
 </html>
