@@ -18,14 +18,13 @@ header {
 }
 
 img {
-	margin-top: 70px;
-	width:75%;
-	height:75%;
+	margin-top: 50px;
+	max-height: 600px;
 }
 
 #image-box {
 	background-color: #1a2893;
-	max-height: 
+	max-height: 500px;
 
 }
 

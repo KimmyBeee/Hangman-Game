@@ -2,8 +2,10 @@
 // Confirmation to play game.
 alert("Welcome to the Cosmic Aquarium! Press OK to begin!");
 
-var availGUess = 10
-var wins = 0
+var availGuess = 10;
+var wins = 0;
+
+var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 //Word Bank
 //=======================================================================================================================
@@ -13,26 +15,22 @@ var words = ["dolphin", "universe", "humpback whale", "nebula", "octopus", "shoo
 // Random word is chosen from the bank
 var chosenWord = words[Math.floor(Math.random() * words.length)];
 
-//function (chosenWord.length) to count character spaces
-
-//variable length
-
-//variable underscore
-
-//for loop until underscore for every var of length
-
-
 console.log(chosenWord);
 
-//Create an array of letters in chosen word - chosenLetters
+//Word is represented as __ __ __
+//Create an array of letters in chosenLetters for loop until underscore for each one
+var hidWord = [];
 
+for (var i = 0; i < chosenWord.length; i++) {
+	hidWord[i] = "___";
+}
 
-// Each letter of chosenLetters represented in html by underlines
-//I think I can put underlines in span
+var hidLetters = chosenWord.length;
+
 
 // html changes to reflect the word being used
 window.onload = function displayWord() {
-	var html = "<p>" + chosenWord + "</p>";
+	var html = "<p>" + hidWord.join("  ") + "</p>";
 	document.getElementById("word").innerHTML = html
 }
 
@@ -43,6 +41,9 @@ window.onload = function displayWord() {
 
 
 //onKeyUp event reduces remaining guess number by one in html
+
+//if letter is not in alphabet (key.code > 64 - < 91) 
+//alert("Please enter a letter of the alphabet");
 
 
 //Compare letter guessed to letters in chosenLetters
