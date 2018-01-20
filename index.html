@@ -13,38 +13,34 @@
 	<body>
 		<!-- Whole Page In It's Entirety -->
 		<div class="container">
-			<div class="row">
-				<div class="col-4">
-				<div id="title-box" class="container">
+			<div id="title-box">
 					
 		<!-- Main Title -->
-						<header>
-							<h1 id="main-header">Cosmic Aquarium</h1>
-							<h2 id="name-header">Hangman</h2>
-						</header>
-					</div>
-				</div>
+				<header>
+					<h1 align="center" id="main-header">Cosmic Aquarium</h1>
+					<h2 align="center" id="name-header">Hangman</h2>
+				</header>		
 			</div>	
-			<div class="row">
 				<div id="image-box" class="container">
-					<div class="col-3">
-						<img src="assets/images/HighResCosDolphin.jpg" alt="Rainbow Cosmic Dolphin Joyfully Leaping!!">
+					<div class="row">
+						<div align="center" class="col">
+							<img src="assets/images/cosmicDolphin.jpg" alt="Rainbow Cosmic Dolphin Joyfully Leaping!!">
+						</div>
 					</div>
 				</div>
 		<!-- Current Word Action Box -->
 				<div id="gameplay" class="container">
-					<div class="col-6">
+					<div align="center" class="col">
+		<!-- Insert guess/word lines here -->
 					 	<h2>Current Word:</h2>
 					 	<span style="red" id="word"></span>
-		<!-- Insert guess/word lines here -->
-
-		<!-- Insert guess countdown here -->
-						<h3>Remaining Guesses</h3>
-							<p id="guesses-left"></p>
-
 		<!-- Insert guessed letters here -->
-						<h4>Letters Used</h4>
+					 	<h3>Letters Used:</h4>
 							<p id="used"></p>
+		<!-- Insert guess countdown here -->
+						<h4>Remaining Guesses: <span id="guesses-left"></span></h3>
+		<!-- Insert overall game wins here -->
+						<h4>Wins: <span id="wins"><span></h3>
 					</div>
 				</div>
 			</div>

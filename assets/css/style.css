@@ -2,23 +2,37 @@ body {
 	background-image: url("../images/ep_naturalblack.png");
 }
 
-#main-container {
-	max-width: 760px;
+header {
+
+}
+#title-box {
+	color: white;
+	padding: 50px;
+	padding-right: 25px;
+	max-height: 500px;
+	clear: both;
 }
 
-#title-box {
-	background-image: url();
-	background-repeat: no-repeat;
-	background-color: blue;
-	padding: 50px;
-	/*margin-left: 50px;
-	margin-right: 50px;*/
+.container {
+	overflow: auto;
+}
+
+img {
+	margin-top: 70px;
+	width:75%;
+	height:75%;
 }
 
 #image-box {
 	background-color: #1a2893;
-	float: left;
+	max-height: 
 
+}
+
+#gameplay {
+	background-color: purple;
+	float: right;
+	clear: fixed;
 }
 
 #col-3 {

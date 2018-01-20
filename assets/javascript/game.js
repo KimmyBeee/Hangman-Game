@@ -2,6 +2,9 @@
 // Confirmation to play game.
 alert("Welcome to the Cosmic Aquarium! Press OK to begin!");
 
+var availGUess = 10
+var wins = 0
+
 //Word Bank
 //=======================================================================================================================
 // Bank of words to be solved
@@ -10,13 +13,22 @@ var words = ["dolphin", "universe", "humpback whale", "nebula", "octopus", "shoo
 // Random word is chosen from the bank
 var chosenWord = words[Math.floor(Math.random() * words.length)];
 
+//function (chosenWord.length) to count character spaces
+
+//variable length
+
+//variable underscore
+
+//for loop until underscore for every var of length
+
+
 console.log(chosenWord);
 
 //Create an array of letters in chosen word - chosenLetters
 
 
 // Each letter of chosenLetters represented in html by underlines
-
+//I think I can put underlines in span
 
 // html changes to reflect the word being used
 window.onload = function displayWord() {
@@ -52,10 +64,11 @@ window.onload = function displayWord() {
 //Remaining Guess Number
 //=======================================================================================================================
 
-//Create a number array for how many guesses are available-availGuess
+//html displays how many guesses are available-availGuess
 
+var guessUpdate = document.getElementById("guesses-left");
 
-//html displays this number
+      guessUpdate.innerHTML = availGUess--;
 
 
 //if availGUess is empty
@@ -67,6 +80,9 @@ window.onload = function displayWord() {
 //======================================================================================================================
 //Create winning array to start at 0-wins
 
+var winUpdate = document.getElementById("wins");
+
+      winUpdate.innerHTML = wins;
 
 //html displays 0
 
