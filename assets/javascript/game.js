@@ -35,15 +35,32 @@ window.onload = function displayWord() {
 }
 
 
-//Guess Input
+//Game Play
 //=======================================================================================================================
-//Create onKeyUp event for letter guessed
+ //Remaining letters to be guessed
+ // var remaining = chosenWord.length;
+
+ // while (remaining > 0) {
+
+ // }
+
+//for (var g = 0; g < chosenWord.length; g++) {
+// 	if (chosenWord[g] === guess) {
+// 		hidWord[g] = guess;
+// 		hidLetters- -;
+// 	}
+// }
+
+
+
+
+
+// var letterGuess = document.getElementById("letter-guessed");
+//       console.log(letterGuess)
+
 
 
 //onKeyUp event reduces remaining guess number by one in html
-
-//if letter is not in alphabet (key.code > 64 - < 91) 
-//alert("Please enter a letter of the alphabet");
 
 
 //Compare letter guessed to letters in chosenLetters
@@ -85,8 +102,6 @@ var winUpdate = document.getElementById("wins");
 
       winUpdate.innerHTML = wins;
 
-//html displays 0
-
 
 //if all letters in chosenLetters have been matched
 
@@ -97,7 +112,18 @@ var winUpdate = document.getElementById("wins");
 //Game resets (for loop to "random word is chosen from the bank"??)
 
 
+document.onkeyup = function (event) {
+ 	var guess = event.key;
+ 	var letterGuess = [];
+ 	letterGuess = letterGuess.push(guess);
+ 	console.log(letterGuess);
 
+ // 	var html = "<p>" + letterGuess.join("  ") + "</p>";
+	// document.getElementById("letter-guessed").innerHTML = html
+}
+
+
+ 
 
 
 
