@@ -115,7 +115,7 @@ var winUpdate = document.getElementById("wins");
 document.onkeyup = function (event) {
  	var guess = event.key;
  	var letterGuess = [];
- 	letterGuess = letterGuess.push(guess);
+ 	letterGuess = letterGuess.concat(guess);
  	console.log(letterGuess);
 
  // 	var html = "<p>" + letterGuess.join("  ") + "</p>";
