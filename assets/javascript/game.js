@@ -110,17 +110,16 @@ var winUpdate = document.getElementById("wins");
 //Create an event that displays "Congratulations! You get to party with giant cosmic sea mammals!!"
 
 //Game resets (for loop to "random word is chosen from the bank"??)
-
+var letterGuess = [];
 
 document.onkeyup = function (event) {
  	var guess = event.key;
- 	var letterGuess = [];
  	letterGuess = letterGuess.concat(guess);
  	console.log(letterGuess);
-
- // 	var html = "<p>" + letterGuess.join("  ") + "</p>";
-	// document.getElementById("letter-guessed").innerHTML = html
+	var html = "<p>" + letterGuess.join("  ") + "</p>";
+	document.getElementById("letter-guessed").innerHTML = html;
 }
+
 
 
  

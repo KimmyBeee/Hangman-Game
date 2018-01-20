@@ -36,6 +36,10 @@ img {
 	clear: fixed;
 }
 
+#letter-guessed {
+	font-size: 22px
+}
+
 #col-3 {
 	background-color: #1a2893;
 }
