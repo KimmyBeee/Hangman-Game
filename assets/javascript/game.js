@@ -28,7 +28,7 @@ for (var i = 0; i < chosenWord.length; i++) {
 var hidLetters = chosenWord.length;
 
 
-// html changes to reflect the word being used
+// html changes to reflect the hidWord array with no commas and space in between each underscore
 window.onload = function displayWord() {
 	var html = "<p>" + hidWord.join("  ") + "</p>";
 	document.getElementById("word").innerHTML = html
@@ -69,7 +69,7 @@ window.onload = function displayWord() {
 
 var guessUpdate = document.getElementById("guesses-left");
 
-      guessUpdate.innerHTML = availGUess--;
+      guessUpdate.innerHTML = availGuess;
 
 
 //if availGUess is empty

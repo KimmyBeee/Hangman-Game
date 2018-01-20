@@ -29,6 +29,8 @@ img {
 }
 
 #gameplay {
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-color: purple;
 	float: right;
 	clear: fixed;
