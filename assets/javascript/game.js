@@ -6,31 +6,42 @@ alert("Welcome to the Cosmic Aquarium! Press OK to begin!");
 var availGuess = 10;
 var wins = 0;
 var words = ["dolphin", "universe", "humpback whale", "nebula", "octopus", "shooting star", "pirhana", "singularity"];
-var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var letterGuess = [];
 var hidWord = [];
 
-//setting up main word to be solved
-//=======================================================================================================================
+$("#wins").text("0");
+//Reset available guess count
+$("#guesses-left").text("10");
+
+
+//Reset all the variables in the game
+	function resetGame()	{
+
+		var guessUpdate = document.getElementById("guesses-left");
+      	guessUpdate.innerHTML = availGuess;
 
 // Random word is chosen from the bank
-var chosenWord = words[Math.floor(Math.random() * words.length)];
-console.log(chosenWord);
+		var chosenWord = words[Math.floor(Math.random() * words.length)];
+		console.log(chosenWord);
+		var hidLetters = chosenWord.length;
 
 //Word is represented as __ __ __
-//Create an array of letters in chosenLetters for loop until underscore for each one
-for (var i = 0; i < chosenWord.length; i++) {
-	hidWord[i] = "___";
-}
+//Create an array of letters in chosenLetters for loop until underscore for each one...
+		for (var i = 0; i < chosenWord.length; i++) {
+		hidWord[i] = "___";
+		}
+//...and write it up to the html 
+		window.onload = function displayWord() {
+		var html = "<p>" + hidWord.join("  ") + "</p>";
+		document.getElementById("word").innerHTML = html
+		}
 
-var hidLetters = chosenWord.length;
+	}
 
 
-// html changes to reflect the hidWord array with no commas and space in between each underscore
-window.onload = function displayWord() {
-	var html = "<p>" + hidWord.join("  ") + "</p>";
-	document.getElementById("word").innerHTML = html
-}
+
+
+
 
 
 //Game Play
@@ -55,9 +66,6 @@ window.onload = function displayWord() {
 
 //html displays how many guesses are available-availGuess
 
-var guessUpdate = document.getElementById("guesses-left");
-
-      guessUpdate.innerHTML = availGuess;
 
 
 //if availGUess is empty
@@ -83,7 +91,7 @@ var winUpdate = document.getElementById("wins");
 //Game resets (for loop to "random word is chosen from the bank"??)
 
 
-document.onkeyup = function (event) {
+document.onkeyup = function(event) {
  	var guess = event.key;
  	letterGuess = letterGuess.concat(guess);
  	console.log(letterGuess);
